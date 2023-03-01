@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro dev</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  
+  <section class="hidden-tech" id="hidden-tech">
+      <form id="form">
+        <div class="tech-name-area">
+          <label for="tech-name">Nome da Linguagem</label>
+          <select type="text" id="tech-name" class="input-style">
+            <option value="JavaScript">JavaScript</option>
+            <option value="Html5">Html5</option>
+            <option value="Css3">Css3</option>
+            <option value="React">React</option>
+            <option value="Angular">Angular</option>
+            <option value="Vue">Vue</option>
+          </select>
+        </div>
+
+        <h3>Experiencia</h3>
+
+        <div class="input-years-area">
+          <input type="radio" class="radio-inputs" name="tech-radio" id="two-years" value="0-2 anos">  <label for="two-years">0-2 anos</label><br>
+          <input type="radio" class="radio-inputs" name="tech-radio" id="three-years" value="3-4 anos"><label for="three-years"> 3-4 anos </label> <br> 
+          <input type="radio" class="radio-inputs" name="tech-radio" id="five-years" value="5 anos +"> <label for="five-years"> 5 anos + </label><br>
+          <div class="form-buttons">
+            <input id="tech-climb" value="Salvar Técnologia" type="submit">
+            <input id="tech-remove" value="Cancelar Adicionamento" type="submit">
+          </div>
+        </div>
+      </form>
+  </section>
+
+
+  <div id="container">
+    <header>
+      <h1>Cadastro <span>Dev</span></h1>
+    </header>
+    <div class="text-area">
+      <div class="welcome-message" id="welcome-message" name = "welcome-message">
+        <h1 id="message-start">Olá Desenvolvedor, Bem vindo ao Cadastro Dev </h1>
+      </div>
+
+      <div id="dev-name">
+        <form id="name-form">
+          <label for="name">Insira seu primeiro nome aqui: </label> <br>
+          <input type="text" class="input-style" name="name" id="name" placeholder="ex. Lucas" required pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$"> <br>
+          <input type="submit" value="Enviar nome" class="button-send-name" id="button-send-name">
+        </form>
+      </div>
+
+      <button id="add-tech" class="tech-none" >
+        Adicionar Técnologias <img src="./img/1491254405-plusaddmoredetail_82972.svg">
+      </button>
+      
+        <h2 class="align-itens">Suas Técnologias</h2>
+        <p class="align-itens">+Tempo de Experiencia</p>
+
+      <div id="logo-techs">
+        <div id="javaScript-selected" class="img">
+        </div>
+        <div id="html-selected" class="img">
+        </div>
+        <div id="css3-selected" class="img">
+        </div>
+        <div id="react-selected" class="img">
+          <img src="./img/react-2.svg" alt="" >
+        </div>
+        <div id="angular-selected" class="img">
+        <img src="./img/angular-icon-1.svg" alt="" >
+        </div>
+        <div id="vue-selected" class="img">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
